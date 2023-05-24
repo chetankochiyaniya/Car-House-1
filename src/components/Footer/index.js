@@ -1,23 +1,15 @@
-import React from 'react'
+import { Container, Typography } from '@mui/material';
 
-function Footer() {
-    return (
-        <>
-            {/* <!-- ***** Footer Start ***** --> */}
-            <footer>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <p>
-                                Copyright © 2020 Car House
-                                - Devlope by: <p>Chetan Kochiyaniya</p>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </>
-    )
-}
+const Footer = () => {
+  return (
+    <footer>
+      <Container>
+        <Typography variant="body1" align="center" mt={2} mb={2}>
+          © 2020 Car House - Developed by: <Typography variant="body2" component="span" color="primary">Chetan Kochiyaniya</Typography>
+        </Typography>
+      </Container>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

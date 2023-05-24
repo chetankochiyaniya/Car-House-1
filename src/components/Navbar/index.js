@@ -1,48 +1,178 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import Container from "@mui/material/Container";
+import Button from "@mui/material/Button";
+import MenuItem from "@mui/material/MenuItem";
+import TimeToLeaveIcon from "@mui/icons-material/TimeToLeave";
 
 function Navbar() {
-    return (
-        <>
-            {/* <!-- ***** Header Area Start ***** --> */}
-            <header className="header-area header-sticky">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12">
-                            <nav className="main-nav">
-                                {/* <!-- ***** Logo Start ***** --> */}
-                                <Link to="index.html" className="logo">Car Dealer<em> Website</em></Link>
-                                {/* <!-- ***** Logo End ***** --> */}
-                                {/* <!-- ***** Menu Start ***** --> */}
-                                <ul className="nav">
-                                    <li><Link to="index.html" className="active">Home</Link></li>
-                                    <li><Link to="cars.html">Cars</Link></li>
-                                    <li className="dropdown">
-                                        <Link className="dropdown-toggle" data-toggle="dropdown" to="#" role="button" aria-haspopup="true" aria-expanded="false">About</Link>
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
 
-                                        <div className="dropdown-menu">
-                                            <Link className="dropdown-item" to="about.html">About Us</Link>
-                                            <Link className="dropdown-item" to="blog.html">Blog</Link>
-                                            <Link className="dropdown-item" to="team.html">Team</Link>
-                                            <Link className="dropdown-item" to="testimonials.html">Testimonials</Link>
-                                            <Link className="dropdown-item" to="faq.html">FAQ</Link>
-                                            <Link className="dropdown-item" to="terms.html">Terms</Link>
-                                        </div>
-                                    </li>
-                                    <li><Link to="contact.html">Contact</Link></li>
-                                </ul>
-                                <Link to="#" className='menu-trigger'>
-                                    <span>Menu</span>
-                                </Link>
-                                {/* <!-- ***** Menu End ***** --> */}
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            {/* <!-- ***** Header Area End ***** --> */}
-        </>
-    )
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
+  return (
+    <AppBar position="sticky" sx={{ Height: "80px", backgroundColor:' #1e1e1e' }} >
+      <Container maxWidth="xl">
+        <Toolbar disableGutters>
+          <TimeToLeaveIcon
+            sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
+          />
+          <Typography
+            variant="h1"
+            noWrap
+            component="a"
+            href="/"
+            sx={{
+              mr: 2,
+              display: { xs: "none", md: "flex" },
+              fontFamily: "monospace",
+              fontWeight: 900,
+              letterSpacing: ".1rem",
+              color: "inherit",
+              textDecoration: "none"
+            }}
+          >
+            <Typography variant="h5" component="span">
+              CAR
+            </Typography>{" "}
+            <Typography variant="h5" component="span" color="#ed563b" ml={1}>
+              HOUSE
+            </Typography>
+          </Typography>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "left"
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left"
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: "block", md: "none" },
+              }}
+            >
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">Home</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">Cars</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">About</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">Contact</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">Blog</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">Team</Typography>
+              </MenuItem>
+            </Menu>
+          </Box>
+          <TimeToLeaveIcon
+            sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
+          />
+          <Typography
+            variant="h6"
+            noWrap
+            component="a"
+            href=""
+            sx={{
+              mr: 2,
+              display: { xs: "flex", md: "none" },
+              flexGrow: 1,
+              fontFamily: "monospace",
+              fontWeight: 700,
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none"
+            }}
+          >
+            <Typography variant="h6" component="span">
+              CAR
+            </Typography>{" "}
+            <Typography variant="h6" component="span" className="em-color" ml={1}>
+              HOUSE
+            </Typography>
+          </Typography>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex", justifyContent: "flex-end" }
+            }}
+          >
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              Home
+            </Button>
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              Cars
+            </Button>
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              About
+            </Button>
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              Contact
+            </Button>
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              Blog
+            </Button>
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              Team
+            </Button>
+          </Box>
+        </Toolbar>
+      </Container>
+    </AppBar>
+  );
 }
+export default Navbar;
 
-export default Navbar

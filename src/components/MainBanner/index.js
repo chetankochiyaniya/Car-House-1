@@ -1,27 +1,38 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import Box from "@mui/material/Box";
+import Button from '@mui/material/Button';
+import Typography from "@mui/material/Typography";
 
 function MainBanner() {
     return (
         <>
-            {/* <!-- ***** Main Banner Area Start ***** --> */}
-            <div className="main-banner" id="top">
-                <video autoPlay muted loop id="bg-video">
-                    <source src="/assetes/video.mp4" type="video/mp4" />
-                </video>
+    <Box position="relative">
+      <video autoPlay muted loop id="bg-video" style={{ width: '100%' }}>
+        <source src="/assets/video.mp4" type="video/mp4" />
+      </video>
+      <Box
+        position="absolute"
+        top={0}
+        left={0}
+        width="100%"
+        height="100%"
+        bgcolor="var(--over-bg-color)"
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
+        textAlign="center" 
+      >
+        <Typography variant="h6" color="white" sx={{ fontWeight: '700' }}>Lorem ipsum dolor sit amet</Typography>
+            <Typography variant="h3" color="white" sx={{ fontWeight: '700' }} mb={2}>Best <Typography component="span" variant="h2" className='em-color' sx={{ fontWeight: '700',justifyContent:'center',alignItems:'center'}}>car dealer</Typography> in town!</Typography>
+            <Button variant="contained" sx={{ backgroundColor: 'var(--red-color)', fontWeight: '500' }}>Contact Us</Button>
+      </Box>
+    </Box>
 
-                <div className="video-overlay header-text">
-                    <div className="caption">
-                        <h6>Lorem ipsum dolor sit amet</h6>
-                        <h2>Best <em>car dealer</em> in town!</h2>
-                        <div className="main-button">
-                            <Link to="contact.html">Contact Us</Link>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* <!-- ***** Main Banner Area End ***** --> */}
+
+            
         </>
-)}
+    )
+}
 
 export default MainBanner

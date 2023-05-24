@@ -1,28 +1,38 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { Box, Container, Typography, Link, Button } from '@mui/material';
 
-function Contact() {
+const Contact = () => {
     return (
-        <>
-            {/* <!-- ***** Call to Action Start ***** --> */}
-            <section className="section section-bg" id="call-to-action" style={{ backgroundImage: 'url(assets/images/banner-image-1-1920x500.jpg)' }}>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-10 offset-lg-1">
-                            <div className="cta-content">
-                                <h2>Send us a <em>message</em></h2>
-                                <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula, sit amet dapibus odio augue eget libero. Morbi tempus mauris a nisi luctus imperdiet.</p>
-                                <div className="main-button">
-                                    <Link to="contact.html">Contact us</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {/* <!-- ***** Call to Action End ***** --> */}
-        </>
-    )
-}
+        <Box
+            sx={{
+                backgroundImage: 'url(assets/contact.jpg)',
+                textAlign: 'center',
+                mt: 10,
+            }}
+        >
+            <Box sx={{ backgroundColor: 'var(--over-bg-color)', pt: 10, pb: 15 }} >
+                <Container>
+                    <Box sx={{ maxWidth: 800, mx: 'auto' }}>
+                        <Typography variant="h4" sx={{ color: 'white', mb: 5 }}>
+                            SEND US A <Typography variant="h4" color='var(--red-color)' component="span">MESSAGE</Typography>
+                        </Typography>
+                        <Typography variant="body1" sx={{ color: 'white', mb: 4, mt: 2 }}>
+                            Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula, sit amet dapibus odio augue eget libero. Morbi tempus mauris a nisi luctus imperdiet.
+                        </Typography>
+                        <Box sx={{ textAlign: 'center', mt: 4 }}>
+                            <Button
+                                component={Link}
+                                to="/contact"
+                                variant="contained"
+                                sx={{ backgroundColor: 'var(--red-color)', '&:hover': { backgroundColor: 'var(--btn-hover)' } }}
+                            >
+                                Contact
+                            </Button>
+                        </Box>
+                    </Box>
+                </Container>
+            </Box>
+        </Box>
+    );
+};
 
-export default Contact
+export default Contact;
