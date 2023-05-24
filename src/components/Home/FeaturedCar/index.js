@@ -39,11 +39,7 @@ function FeaturedCar() {
                     <i className="fa fa-cube"></i> 1800 cc &nbsp;&nbsp;&nbsp;
                     <i className="fa fa-cog"></i> Manual &nbsp;&nbsp;&nbsp;
                   </Typography>
-                  <ul className="social-icons">
-                    <li>
-                      <Link to="car-details">+ View Car</Link>
-                    </li>
-                  </ul>
+                  <Link to="car-details">+ View Car</Link>
                 </Box>
               </Box>
             </Grid>
@@ -64,11 +60,7 @@ function FeaturedCar() {
                     <i className="fa fa-cube"></i> 1800 cc &nbsp;&nbsp;&nbsp;
                     <i className="fa fa-cog"></i> Manual &nbsp;&nbsp;&nbsp;
                   </Typography>
-                  <ul className="social-icons">
-                    <li>
-                      <Link to="car-details">+ View Car</Link>
-                    </li>
-                  </ul>
+                  <Link to="car-details">+ View Car</Link>
                 </Box>
               </Box>
             </Grid>
@@ -89,17 +81,13 @@ function FeaturedCar() {
                     <i className="fa fa-cube"></i> 1800 cc &nbsp;&nbsp;&nbsp;
                     <i className="fa fa-cog"></i> Manual &nbsp;&nbsp;&nbsp;
                   </Typography>
-                  <ul className="social-icons">
-                    <li>
-                      <Link to="car-details">+ View Car</Link>
-                    </li>
-                  </ul>
+                  <Link to="car-details">+ View Car</Link>
                 </Box>
               </Box>
             </Grid>
           </Grid>
           <Box sx={{ textAlign: 'center', mt: 4 }}>
-            <Button component={Link} to="cars" variant="contained" sx={{backgroundColor: 'var(--red-color)', '&:hover': { backgroundColor: 'var(--btn-hover)' }}}>
+            <Button component={Link} to="cars" variant="contained" sx={{ backgroundColor: 'var(--red-color)', '&:hover': { backgroundColor: 'var(--btn-hover)' } }}>
               View Cars
             </Button>
           </Box>

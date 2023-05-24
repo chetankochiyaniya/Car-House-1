@@ -1,22 +1,18 @@
 import React from 'react';
-import AboutUS from '../AboutUs';
-import Blogs from '../Blogs';
-import Contact from '../Contact';
-import FeaturedCar from '../FeaturedCar';
-import Footer from '../Footer';
-import MainBanner from '../MainBanner';
-import Navbar from '../Navbar';
+import AboutUS from '../Home/AboutUs';
+import Blogs from '../Home/Blogs';
+import Contact from '../Home/Contact';
+import FeaturedCar from '../Home/FeaturedCar';
+import MainBanner from '../Home/MainBanner';
 
 function Home() {
     return (
         <>
-            <Navbar />
             <MainBanner />
             <FeaturedCar />
             <AboutUS />
             <Blogs />
             <Contact />
-            <Footer />
         </>
     );
 }
