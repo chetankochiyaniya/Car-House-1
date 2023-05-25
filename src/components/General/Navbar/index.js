@@ -92,7 +92,7 @@ function Navbar() {
               <MenuItem onClick={handleCloseNavMenu}>
                 <Typography textAlign="center">About</Typography>
               </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
+              <MenuItem onClick={()=>navigate('/contact')}>
                 <Typography textAlign="center">Contact</Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
@@ -154,7 +154,7 @@ function Navbar() {
               About
             </Button>
             <Button
-              onClick={handleCloseNavMenu}
+              onClick={()=>navigate('/contact')}
               sx={{ my: 2, color: "white", display: "block" }}
             >
               Contact

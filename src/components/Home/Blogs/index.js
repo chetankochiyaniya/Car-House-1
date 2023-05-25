@@ -59,7 +59,7 @@ const Blogs = () => {
                                 <img src="/assets/blog-1.jpg" alt="" />
                                 <Typography variant="h4">Lorem ipsum dolor sit amet, consectetur adipisicing.</Typography>
                                 <Typography variant="body2" component="p">
-                                    <i className="fa fa-user"></i> John Doe | <i className="fa fa-calendar"></i> 27.07.2020 10:10 | <i className="fa fa-comments"></i> 15 comments
+                                    <i className="fa fa-user"></i> Chetan K | <i className="fa fa-calendar"></i> 25.05.2023 10:10 | <i className="fa fa-comments"></i> 15 comments
                                 </Typography>
                                 <Typography variant="body1">
                                     Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut, accumsan diam.
@@ -79,7 +79,7 @@ const Blogs = () => {
                                 <img src="/assets/blog-2.jpg" alt="" />
                                 <Typography variant="h4">Aspernatur excepturi magni, placeat rerum nobis magnam libero! Soluta.</Typography>
                                 <Typography variant="body2" component="p">
-                                    <i className="fa fa-user"></i> John Doe | <i className="fa fa-calendar"></i> 27.07.2020 10:10 | <i className="fa fa-comments"></i> 15 comments
+                                    <i className="fa fa-user"></i> Chetan K | <i className="fa fa-calendar"></i> 25.05.2023 10:10 | <i className="fa fa-comments"></i> 15 comments
                                 </Typography>
                                 <Typography variant="body1">
                                     Integer dapibus, est vel dapibus mattis, sem mauris luctus leo, ac pulvinar quam tortor a velit. Praesent ultrices erat ante, in ultricies augue ultricies faucibus. Nam tellus nibh, ullamcorper at mattis non, rhoncus sed massa. Cras quis pulvinar eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -99,7 +99,7 @@ const Blogs = () => {
                                 <img src="/assets/blog-3.jpg" alt="" />
                                 <Typography variant="h4">Sunt hic recusandae vitae explicabo quidem laudantium corrupti non adipisci nihil.</Typography>
                                 <Typography variant="body2" component="p">
-                                    <i className="fa fa-user"></i> John Doe | <i className="fa fa-calendar"></i> 27.07.2020 10:10 | <i className="fa fa-comments"></i> 15 comments
+                                    <i className="fa fa-user"></i> Chetan K | <i className="fa fa-calendar"></i> 25.05.2023 10:10 | <i className="fa fa-comments"></i> 15 comments
                                 </Typography>
                                 <Typography variant="body1">
                                     Fusce laoreet malesuada rhoncus. Donec ultricies diam tortor, id auctor neque posuere sit amet. Aliquam pharetra, augue vel cursus porta, nisi tortor vulputate sapien, id scelerisque felis magna id felis. Proin neque metus, pellentesque pharetra semper vel, accumsan a neque.
