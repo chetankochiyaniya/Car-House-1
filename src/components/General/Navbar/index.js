@@ -10,9 +10,12 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import TimeToLeaveIcon from "@mui/icons-material/TimeToLeave";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+
+  const navigate = useNavigate()
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -23,7 +26,7 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="sticky" sx={{ Height: "80px", backgroundColor:' #1e1e1e' }} >
+    <AppBar position="sticky" sx={{ Height: "80px", backgroundColor:'var(--navbar-bg)' }} >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <TimeToLeaveIcon
@@ -133,13 +136,13 @@ function Navbar() {
             }}
           >
             <Button
-              onClick={handleCloseNavMenu}
+              onClick={()=>navigate("/")}
               sx={{ my: 2, color: "white", display: "block" }}
             >
               Home
             </Button>
             <Button
-              onClick={handleCloseNavMenu}
+              onClick={()=>navigate("/cars")}
               sx={{ my: 2, color: "white", display: "block" }}
             >
               Cars

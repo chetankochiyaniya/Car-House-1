@@ -25,7 +25,7 @@ function MainBanner() {
       >
         <Typography variant="h6" color="white" sx={{ fontWeight: '700' }}>Lorem ipsum dolor sit amet</Typography>
             <Typography variant="h3" color="white" sx={{ fontWeight: '700' }} mb={2}>Best <Typography component="span" variant="h2" className='em-color' sx={{ fontWeight: '700',justifyContent:'center',alignItems:'center'}}>car dealer</Typography> in town!</Typography>
-            <Button variant="contained" sx={{ backgroundColor: 'var(--red-color)', fontWeight: '500' }}>Contact Us</Button>
+            <Button variant="contained" sx={{ backgroundColor: 'var(--red-color)', '&:hover': { backgroundColor: 'var(--btn-hover)' }, fontWeight: '500'}}>Contact Us</Button>
       </Box>
     </Box>
 

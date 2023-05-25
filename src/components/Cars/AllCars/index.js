@@ -1,33 +1,37 @@
 import React from 'react';
-import { Box, Container, Grid, FormControl, InputLabel, MenuItem, Select, Button, Link, Typography, Pagination } from '@mui/material';
+import { Box, Container, Grid, FormControl, InputLabel, MenuItem, Select, Button, Typography, Pagination } from '@mui/material';
+import Banner from '../Banner';
 import './index.css'
+import { useNavigate } from 'react-router-dom';
 
-const CarInfo = () => {
+const AllCars = () => {
 
+    const navigate = useNavigate()
     return (
         <>
+        <Banner/>
             <Box component="section" sx={{ background: '#f9f9f9', paddingTop: '3.5rem', paddingBottom: '2rem' }} id="trainers">
                 <Container>
                     <Grid container spacing={2}>
                         <Grid item xs={12} sm={6} md={4} lg={3}>
-                                <FormControl fullWidth size="small" >
-                                    <InputLabel>Used/New:</InputLabel>
-                                    <Select >
-                                        <MenuItem value="">All</MenuItem>
-                                        <MenuItem value="new">New vehicle</MenuItem>
-                                        <MenuItem value="used">Used vehicle</MenuItem>
-                                    </Select>
-                                </FormControl>
+                            <FormControl fullWidth size="small" >
+                                <InputLabel>Used/New:</InputLabel>
+                                <Select >
+                                    <MenuItem value="All">All</MenuItem>
+                                    <MenuItem value="new">New vehicle</MenuItem>
+                                    <MenuItem value="used">Used vehicle</MenuItem>
+                                </Select>
+                            </FormControl>
                         </Grid>
                         <Grid item xs={12} sm={6} md={4} lg={3}>
                             <FormControl fullWidth size="small">
                                 <InputLabel>Vehicle Type:</InputLabel>
                                 <Select>
-                                    <MenuItem value="">select - 1</MenuItem>
-                                    <MenuItem value="">select - 2</MenuItem>
-                                    <MenuItem value="">select - 3</MenuItem>
-                                    <MenuItem value="">select - 4</MenuItem>
-                                    <MenuItem value="">select - 5</MenuItem>
+                                    <MenuItem value="select - 1">select - 1</MenuItem>
+                                    <MenuItem value="select - 2">select - 2</MenuItem>
+                                    <MenuItem value="select - 3">select - 3</MenuItem>
+                                    <MenuItem value="select - 4">select - 4</MenuItem>
+                                    <MenuItem value="select - 5">select - 5</MenuItem>
                                 </Select>
                             </FormControl>
                         </Grid>
@@ -35,11 +39,11 @@ const CarInfo = () => {
                             <FormControl fullWidth size="small">
                                 <InputLabel>Model:</InputLabel>
                                 <Select>
-                                    <MenuItem value="">select - 1</MenuItem>
-                                    <MenuItem value="">select - 2</MenuItem>
-                                    <MenuItem value="">select - 3</MenuItem>
-                                    <MenuItem value="">select - 4</MenuItem>
-                                    <MenuItem value="">select - 5</MenuItem>
+                                    <MenuItem value="select - 1">select - 1</MenuItem>
+                                    <MenuItem value="select - 2">select - 2</MenuItem>
+                                    <MenuItem value="select - 3">select - 3</MenuItem>
+                                    <MenuItem value="select - 4">select - 4</MenuItem>
+                                    <MenuItem value="select - 5">select - 5</MenuItem>
                                 </Select>
                             </FormControl>
                         </Grid>
@@ -47,11 +51,11 @@ const CarInfo = () => {
                             <FormControl fullWidth size="small">
                                 <InputLabel>Price:</InputLabel>
                                 <Select>
-                                    <MenuItem value="">select - 1</MenuItem>
-                                    <MenuItem value="">select - 2</MenuItem>
-                                    <MenuItem value="">select - 3</MenuItem>
-                                    <MenuItem value="">select - 4</MenuItem>
-                                    <MenuItem value="">select - 5</MenuItem>
+                                    <MenuItem value="select - 1">select - 1</MenuItem>
+                                    <MenuItem value="select - 2">select - 2</MenuItem>
+                                    <MenuItem value="select - 3">select - 3</MenuItem>
+                                    <MenuItem value="select - 4">select - 4</MenuItem>
+                                    <MenuItem value="select - 5">select - 5</MenuItem>
                                 </Select>
                             </FormControl>
                         </Grid>
@@ -59,11 +63,11 @@ const CarInfo = () => {
                             <FormControl fullWidth size="small">
                                 <InputLabel>Mileage:</InputLabel>
                                 <Select>
-                                    <MenuItem value="">select - 1</MenuItem>
-                                    <MenuItem value="">select - 2</MenuItem>
-                                    <MenuItem value="">select - 3</MenuItem>
-                                    <MenuItem value="">select - 4</MenuItem>
-                                    <MenuItem value="">select - 5</MenuItem>
+                                    <MenuItem value="select - 1">select - 1</MenuItem>
+                                    <MenuItem value="select - 2">select - 2</MenuItem>
+                                    <MenuItem value="select - 3">select - 3</MenuItem>
+                                    <MenuItem value="select - 4">select - 4</MenuItem>
+                                    <MenuItem value="select - 5">select - 5</MenuItem>
                                 </Select>
                             </FormControl>
                         </Grid>
@@ -71,11 +75,11 @@ const CarInfo = () => {
                             <FormControl fullWidth size="small">
                                 <InputLabel>Number of seats:</InputLabel>
                                 <Select>
-                                    <MenuItem value="">select - 1</MenuItem>
-                                    <MenuItem value="">select - 2</MenuItem>
-                                    <MenuItem value="">select - 3</MenuItem>
-                                    <MenuItem value="">select - 4</MenuItem>
-                                    <MenuItem value="">select - 5</MenuItem>
+                                    <MenuItem value="select - 1">select - 1</MenuItem>
+                                    <MenuItem value="select - 2">select - 2</MenuItem>
+                                    <MenuItem value="select - 3">select - 3</MenuItem>
+                                    <MenuItem value="select - 4">select - 4</MenuItem>
+                                    <MenuItem value="select - 5">select - 5</MenuItem>
                                 </Select>
                             </FormControl>
                         </Grid>
@@ -83,11 +87,11 @@ const CarInfo = () => {
                             <FormControl fullWidth size="small">
                                 <InputLabel>Fuel:</InputLabel>
                                 <Select>
-                                    <MenuItem value="">select - 1</MenuItem>
-                                    <MenuItem value="">select - 2</MenuItem>
-                                    <MenuItem value="">select - 3</MenuItem>
-                                    <MenuItem value="">select - 4</MenuItem>
-                                    <MenuItem value="">select - 5</MenuItem>
+                                    <MenuItem value="select - 1">select - 1</MenuItem>
+                                    <MenuItem value="select - 2">select - 2</MenuItem>
+                                    <MenuItem value="select - 3">select - 3</MenuItem>
+                                    <MenuItem value="select - 4">select - 4</MenuItem>
+                                    <MenuItem value="select - 5">select - 5</MenuItem>
                                 </Select>
                             </FormControl>
                         </Grid>
@@ -95,11 +99,11 @@ const CarInfo = () => {
                             <FormControl fullWidth size="small">
                                 <InputLabel>Make:</InputLabel>
                                 <Select>
-                                    <MenuItem value="">select - 1</MenuItem>
-                                    <MenuItem value="">select - 2</MenuItem>
-                                    <MenuItem value="">select - 3</MenuItem>
-                                    <MenuItem value="">select - 4</MenuItem>
-                                    <MenuItem value="">select - 5</MenuItem>
+                                    <MenuItem value="select - 1">select - 1</MenuItem>
+                                    <MenuItem value="select - 2">select - 2</MenuItem>
+                                    <MenuItem value="select - 3">select - 3</MenuItem>
+                                    <MenuItem value="select - 4">select - 4</MenuItem>
+                                    <MenuItem value="select - 5">select - 5</MenuItem>
                                 </Select>
                             </FormControl>
                         </Grid>
@@ -135,7 +139,7 @@ const CarInfo = () => {
                                         <i className="fa fa-cube"></i> 1800 cc &nbsp;&nbsp;&nbsp;
                                         <i className="fa fa-cog"></i> Manual &nbsp;&nbsp;&nbsp;
                                     </Typography>
-                                    <Link to="car-details">+ View Car</Link>
+                                    <Typography color="var(--link-color)" onClick={()=>navigate("/car-details")}>+ View Car</Typography>
                                 </Box>
                             </Box>
                         </Grid>
@@ -156,7 +160,7 @@ const CarInfo = () => {
                                         <i className="fa fa-cube"></i> 1800 cc &nbsp;&nbsp;&nbsp;
                                         <i className="fa fa-cog"></i> Manual &nbsp;&nbsp;&nbsp;
                                     </Typography>
-                                    <Link to="car-details">+ View Car</Link>
+                                    <Typography color="var(--link-color)" onClick={()=>navigate("/car-details")}>+ View Car</Typography>
                                 </Box>
                             </Box>
                         </Grid>
@@ -177,7 +181,7 @@ const CarInfo = () => {
                                         <i className="fa fa-cube"></i> 1800 cc &nbsp;&nbsp;&nbsp;
                                         <i className="fa fa-cog"></i> Manual &nbsp;&nbsp;&nbsp;
                                     </Typography>
-                                    <Link to="car-details">+ View Car</Link>
+                                    <Typography color="var(--link-color)" onClick={()=>navigate("/car-details")}>+ View Car</Typography>
                                 </Box>
                             </Box>
                         </Grid>
@@ -198,7 +202,7 @@ const CarInfo = () => {
                                         <i className="fa fa-cube"></i> 1800 cc &nbsp;&nbsp;&nbsp;
                                         <i className="fa fa-cog"></i> Manual &nbsp;&nbsp;&nbsp;
                                     </Typography>
-                                    <Link to="car-details">+ View Car</Link>
+                                    <Typography color="var(--link-color)" onClick={()=>navigate("/car-details")}>+ View Car</Typography>
                                 </Box>
                             </Box>
                         </Grid>
@@ -219,7 +223,7 @@ const CarInfo = () => {
                                         <i className="fa fa-cube"></i> 1800 cc &nbsp;&nbsp;&nbsp;
                                         <i className="fa fa-cog"></i> Manual &nbsp;&nbsp;&nbsp;
                                     </Typography>
-                                    <Link to="car-details">+ View Car</Link>
+                                    <Typography color="var(--link-color)" onClick={()=>navigate("/car-details")}>+ View Car</Typography>
                                 </Box>
                             </Box>
                         </Grid>
@@ -240,14 +244,14 @@ const CarInfo = () => {
                                         <i className="fa fa-cube"></i> 1800 cc &nbsp;&nbsp;&nbsp;
                                         <i className="fa fa-cog"></i> Manual &nbsp;&nbsp;&nbsp;
                                     </Typography>
-                                    <Link to="car-details">+ View Car</Link>
+                                    <Typography color="var(--link-color)" onClick={()=>navigate("/car-details")}>+ View Car</Typography>
                                 </Box>
                             </Box>
                         </Grid>
                     </Grid>
                 </Container>
             </Box>
-            <Container sx={{ display: "flex", justifyContent: "center" , paddingBottom:6}}>
+            <Container sx={{ display: "flex", justifyContent: "center", paddingBottom: 6 }}>
                 <Pagination count={10} color="error" />
             </Container>
 
@@ -255,4 +259,4 @@ const CarInfo = () => {
     );
 };
 
-export default CarInfo;
+export default AllCars;

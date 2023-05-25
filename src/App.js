@@ -1,21 +1,23 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Cars from './components/Cars';
+import AllCars from './components/Cars/AllCars';
+import CardDetails from './components/Cars/CarDetails';
 import Footer from './components/General/Footer';
 import Navbar from './components/General/Navbar';
 import Home from './components/Home';
 
 function App() {
   return (
-   <>
-   <Navbar/>
-   <Routes>
-    <Route path='/' element={<Home/>}/>
-    <Route path='/cars' element={<Cars/>}/>
-   </Routes>
-   <Footer/>
-   {/* <Home /> */}
-   </>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/cars' element={<AllCars />} />
+        <Route path='/car-details' element={<CardDetails />} />
+      </Routes>
+      <Footer />
+      {/* <Home /> */}
+    </>
   );
 }
 
