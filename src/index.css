@@ -9,14 +9,12 @@
   --navbar-bg: #1e1e1e;
   --link-color: #007bff;
 
-  --b-text:#000000;
-
+  --b-text: #000000;
 }
 
 .em-color {
   color: var(--red-color);
 }
-
 
 /* 
 ---------------------------------------------
@@ -40,7 +38,6 @@ body {
 }
 
 @media (max-width: 991px) {
-
   html,
   body {
     overflow-x: hidden;

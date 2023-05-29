@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Typography, Container, Grid, Box, Button } from '@mui/material';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { Typography, Container, Grid, Box, Button } from '@mui/material'
 import './index.css'
 
 function FeaturedCar() {
@@ -12,11 +12,15 @@ function FeaturedCar() {
             <Grid item xs={12} md={6}>
               <Box sx={{ textAlign: 'center' }}>
                 <Typography variant="h4">
-                  FEATURED <Typography variant="h4" component="span" className='em-color'>CARS</Typography>
+                  FEATURED{' '}
+                  <Typography variant="h4" component="span" className="em-color">
+                    CARS
+                  </Typography>
                 </Typography>
                 <img src="/assets/line-dec.png" alt="" />
                 <Typography variant="body1">
-                  Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.
+                  Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum
+                  dolor, ultricies fermentum massa consequat eu.
                 </Typography>
               </Box>
             </Grid>
@@ -29,11 +33,12 @@ function FeaturedCar() {
                 </Box>
                 <Box className="down-content">
                   <Typography component="span">
-                    <del><sup>₹</sup>11999 </del> &nbsp; <sup>₹</sup>11779
+                    <del>
+                      <sup>₹</sup>11999{' '}
+                    </del>{' '}
+                    &nbsp; <sup>₹</sup>11779
                   </Typography>
-                  <Typography variant="h4">
-                    Lorem ipsum dolor sit amet, consectetur
-                  </Typography>
+                  <Typography variant="h4">Lorem ipsum dolor sit amet, consectetur</Typography>
                   <Typography variant="body1">
                     <i className="fa fa-dashboard"></i> 130 000km &nbsp;&nbsp;&nbsp;
                     <i className="fa fa-cube"></i> 1800 cc &nbsp;&nbsp;&nbsp;
@@ -50,11 +55,12 @@ function FeaturedCar() {
                 </Box>
                 <Box className="down-content">
                   <Typography component="span">
-                    <del><sup>₹</sup>11999 </del> &nbsp; <sup>₹</sup>11779
+                    <del>
+                      <sup>₹</sup>11999{' '}
+                    </del>{' '}
+                    &nbsp; <sup>₹</sup>11779
                   </Typography>
-                  <Typography variant="h4">
-                    Lorem ipsum dolor sit amet, consectetur
-                  </Typography>
+                  <Typography variant="h4">Lorem ipsum dolor sit amet, consectetur</Typography>
                   <Typography variant="body1">
                     <i className="fa fa-dashboard"></i> 130 000km &nbsp;&nbsp;&nbsp;
                     <i className="fa fa-cube"></i> 1800 cc &nbsp;&nbsp;&nbsp;
@@ -71,11 +77,12 @@ function FeaturedCar() {
                 </Box>
                 <Box className="down-content">
                   <Typography component="span">
-                    <del><sup>₹</sup>11999 </del> &nbsp; <sup>₹</sup>11779
+                    <del>
+                      <sup>₹</sup>11999{' '}
+                    </del>{' '}
+                    &nbsp; <sup>₹</sup>11779
                   </Typography>
-                  <Typography variant="h4">
-                    Lorem ipsum dolor sit amet, consectetur
-                  </Typography>
+                  <Typography variant="h4">Lorem ipsum dolor sit amet, consectetur</Typography>
                   <Typography variant="body1">
                     <i className="fa fa-dashboard"></i> 130 000km &nbsp;&nbsp;&nbsp;
                     <i className="fa fa-cube"></i> 1800 cc &nbsp;&nbsp;&nbsp;
@@ -87,14 +94,21 @@ function FeaturedCar() {
             </Grid>
           </Grid>
           <Box sx={{ textAlign: 'center', mt: 4 }}>
-            <Button component={Link} to="cars" variant="contained" sx={{ backgroundColor: 'var(--red-color)', '&:hover': { backgroundColor: 'var(--btn-hover)' } }}>
+            <Button
+              component={Link}
+              to="cars"
+              variant="contained"
+              sx={{
+                backgroundColor: 'var(--red-color)',
+                '&:hover': { backgroundColor: 'var(--btn-hover)' }
+              }}>
               View Cars
             </Button>
           </Box>
         </Container>
       </Box>
     </>
-  );
+  )
 }
 
-export default FeaturedCar;
+export default FeaturedCar
