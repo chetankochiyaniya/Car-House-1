@@ -21,8 +21,9 @@ function Navbar() {
     setAnchorElNav(event.currentTarget);
   };
 
-  const handleCloseNavMenu = () => {
+  const handleCloseNavMenu = (path) => {
     setAnchorElNav(null);
+    navigate(path)
   };
 
   return (
@@ -83,22 +84,19 @@ function Navbar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              <MenuItem onClick={handleCloseNavMenu}>
+              <MenuItem onClick={()=>handleCloseNavMenu('/')}>
                 <Typography textAlign="center">Home</Typography>
               </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
+              <MenuItem onClick={()=>handleCloseNavMenu('/cars')}>
                 <Typography textAlign="center">Cars</Typography>
               </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
+              <MenuItem onClick={()=>handleCloseNavMenu('/about')}>
                 <Typography textAlign="center">About</Typography>
               </MenuItem>
-              <MenuItem onClick={()=>navigate('/contact')}>
+              <MenuItem onClick={()=>handleCloseNavMenu('/contact')}>
                 <Typography textAlign="center">Contact</Typography>
               </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">Blog</Typography>
-              </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
+              <MenuItem onClick={()=>handleCloseNavMenu('/team')}>
                 <Typography textAlign="center">Team</Typography>
               </MenuItem>
             </Menu>
@@ -122,7 +120,7 @@ function Navbar() {
               textDecoration: "none"
             }}
           >
-            <Typography variant="h6" component="span">
+            <Typography variant="h6" component="span" >
               CAR
             </Typography>{" "}
             <Typography variant="h6" component="span" className="em-color" ml={1}>
@@ -148,7 +146,7 @@ function Navbar() {
               Cars
             </Button>
             <Button
-              onClick={handleCloseNavMenu}
+              onClick={()=>navigate("/about")}
               sx={{ my: 2, color: "white", display: "block" }}
             >
               About
@@ -160,13 +158,7 @@ function Navbar() {
               Contact
             </Button>
             <Button
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
-            >
-              Blog
-            </Button>
-            <Button
-              onClick={handleCloseNavMenu}
+              onClick={()=>navigate('/team')}
               sx={{ my: 2, color: "white", display: "block" }}
             >
               Team

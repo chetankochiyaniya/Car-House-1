@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Box, Container, Typography, Grid, Paper, Link, Button } from '@mui/material';
+import { Box, Container, Typography, Grid, Link, Button } from '@mui/material';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
@@ -55,69 +55,6 @@ const CarDetails = () => {
             {/** Image Carousel End */}
     
             {/** Car Details Start */}
-            <Box sx={{ flexGrow: 1 }}>
-                <Box sx={{ p: 2 }}>
-                    <Paper elevation={0}>
-                        {activeTab === 0 && (
-                            <Box>
-                                <Typography variant="h4">Vehicle Specs</Typography>
-                                <Grid container spacing={2}>
-                                    <Grid item xs={6}>
-                                        <Typography variant="h6" sx={{ color: "#000000", fontWeight: 700, marginBottom: 3 }}>Type</Typography>
-                                        <Typography>Used vehicle</Typography>
-                                    </Grid>
-                                    <Grid item xs={6}>
-                                        <Typography>Make</Typography>
-                                        <Typography>Lorem ipsum dolor sit</Typography>
-                                    </Grid>
-                                    {/* ...rest of the vehicle specs */}
-                                </Grid>
-                            </Box>
-                        )}
-                        {activeTab === 1 && (
-                            <Box>
-                                <Typography variant="h4">Vehicle Description</Typography>
-                                <Typography>
-                                    - Colour coded bumpers <br />
-                                    - Tinted glass <br />
-                                    - Immobiliser <br />
-                                    {/* ...rest of the vehicle description */}
-                                </Typography>
-                            </Box>
-                        )}
-                        {activeTab === 2 && (
-                            <Box>
-                                <Typography variant="h4">Vehicle Extras</Typography>
-                                <Grid container spacing={2}>
-                                    <Grid item xs={6}>
-                                        <Typography>ABS</Typography>
-                                    </Grid>
-                                    <Grid item xs={6}>
-                                        <Typography>Leather seats</Typography>
-                                    </Grid>
-                                    {/* ...rest of the vehicle extras */}
-                                </Grid>
-                            </Box>
-                        )}
-                        {activeTab === 3 && (
-                            <Box>
-                                <Typography variant="h4">Contact Details</Typography>
-                                <Grid container spacing={2}>
-                                    <Grid item xs={6}>
-                                        <Typography>Name</Typography>
-                                        <Typography>John Smith</Typography>
-                                    </Grid>
-                                    <Grid item xs={6}>
-                                        <Typography>Phone</Typography>
-                                        <Typography>123-456-789</Typography>
-                                    </Grid>
-                                    {/* ...rest of the contact details */}
-                                </Grid>
-                            </Box>
-                        )}
-                    </Paper>
-                </Box>
-            </Box>
             <Box component="section" className="section" id="trainers">
                 <Container>
                     <Box className="row" id="tabs">
@@ -298,7 +235,7 @@ const CarDetails = () => {
                 </Typography>
                 <Typography variant="h5" color='var(--red-color)' component="span">  ₹11 779</Typography>
             </Typography>
-            <Box sx={{ textAlign: 'center', mt: 3 }}>
+            <Box sx={{ textAlign: 'center', mt: 3 ,mb:5}}>
                 <Button component={Link} to="buy" variant="contained" sx={{ backgroundColor: 'var(--red-color)', '&:hover': { backgroundColor: 'var(--btn-hover)' } }}>
                     Book Now
                 </Button>

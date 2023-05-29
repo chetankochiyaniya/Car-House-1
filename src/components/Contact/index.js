@@ -49,7 +49,7 @@ function Contact() {
                 </Grid>
             </Grid>
 
-            <Grid container mt={6.5}>
+            <Grid container mt={6.5} mb={10}>
                 <Container maxWidth="xl">
                     <Grid container spacing={2} sx={{ padding: 0 }}>
                         <Grid item xs={12} lg={6} xl={6} sx={{ padding: 0 }}>
@@ -60,6 +60,7 @@ function Contact() {
                                 style={{ border: 0, padding: 0 }}
                                 allowFullScreen={true}
                                 loading="lazy"
+                                title='address'
                                 referrerPolicy="no-referrer-when-downgrade"
                             ></iframe>
                         </Grid>

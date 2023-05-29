@@ -3,6 +3,7 @@ import { Box, Container, Grid, FormControl, InputLabel, MenuItem, Select, Button
 import Banner from '../Banner';
 import './index.css'
 import { useNavigate } from 'react-router-dom';
+import Footer from '../../General/Footer';
 
 const AllCars = () => {
 
@@ -254,7 +255,7 @@ const AllCars = () => {
             <Container sx={{ display: "flex", justifyContent: "center", paddingBottom: 6 }}>
                 <Pagination count={10} color="error" />
             </Container>
-
+            <Footer />
         </>
     );
 };

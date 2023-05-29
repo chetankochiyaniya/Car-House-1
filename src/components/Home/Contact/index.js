@@ -1,6 +1,8 @@
 import { Box, Container, Typography, Link, Button } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
+    const navigate = useNavigate()
     return (
         <Box
             sx={{
@@ -24,6 +26,7 @@ const Contact = () => {
                                 to="/contact"
                                 variant="contained"
                                 sx={{ backgroundColor: 'var(--red-color)', '&:hover': { backgroundColor: 'var(--btn-hover)' } }}
+                                onClick={()=>navigate('/contact')}
                             >
                                 Contact
                             </Button>

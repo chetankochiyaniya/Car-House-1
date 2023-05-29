@@ -4,6 +4,7 @@ import Blogs from '../Home/Blogs';
 import Contact from '../Home/Contact';
 import FeaturedCar from '../Home/FeaturedCar';
 import MainBanner from '../Home/MainBanner';
+import Footer from '../General/Footer'
 
 function Home() {
     return (
@@ -13,6 +14,7 @@ function Home() {
             <AboutUS />
             <Blogs />
             <Contact />
+            <Footer />
         </>
     );
 }
