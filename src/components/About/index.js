@@ -11,7 +11,7 @@ function About() {
     return (<>
         <Box sx={{ textAlign: 'center', mb: 6, mt: 10 }}>
             <Typography variant="h4" component="h2">
-                About<Typography variant="h4" className='em-color' component="span">Us</Typography>
+                ABOUT<Typography variant="h4" className='em-color' component="span">US</Typography>
             </Typography>
             <img src="/assets/line-dec.png" alt="" />
             <Typography variant="body1">

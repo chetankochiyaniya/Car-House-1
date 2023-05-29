@@ -7,7 +7,7 @@ function Team() {
     return (<>
         <Box sx={{ textAlign: 'center', mb: 6, mt: 10 }}>
             <Typography variant="h4" component="h2">
-                Meet our <Typography variant="h4" className='em-color' component="span">Team</Typography>
+                MEET OUR <Typography variant="h4" className='em-color' component="span">TEAM</Typography>
             </Typography>
             <img src="/assets/line-dec.png" alt="" />
             <Typography variant="body1">
